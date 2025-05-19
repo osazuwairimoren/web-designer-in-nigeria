@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional WordPress web design, SEO, and website maintenance services in Lagos, Nigeria. Helping local businesses grow their online presence with expert web solutions.">
+    <title>Treasure - WordPress Web Design & SEO Services in Lagos, Nigeria | Local Web Designer</title>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much does a WordPress website cost in Lagos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WordPress website costs in Lagos vary depending on your specific requirements. Basic WordPress websites typically start around ₦150,000, while more complex e-commerce or custom functionality websites range from ₦300,000 to ₦1,000,000 or more. I provide detailed quotes after understanding your business needs and project scope."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to build a WordPress website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The timeline for a WordPress website project in Lagos typically ranges from 2-8 weeks, depending on complexity. Simple informational websites can be completed in 2-3 weeks, while e-commerce or custom functionality sites may take 4-8 weeks. I provide specific timelines during our initial consultation based on your project requirements."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you provide WordPress maintenance services in Lagos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, I offer comprehensive WordPress maintenance services for Lagos businesses. These include regular updates, security monitoring, backups, performance optimization, and technical support. Maintenance plans are customized based on your website's needs and can be arranged on monthly or quarterly schedules."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What makes your SEO services different from other Lagos agencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "My SEO services are different because I focus on sustainable, results-oriented strategies specifically tailored for the Lagos market. I combine technical SEO, content optimization, and local search tactics to improve your rankings. Unlike some agencies, I provide transparent reporting, education on SEO practices, and integrate SEO principles directly into your website design from the beginning."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you redesign my existing website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Website redesign is one of my core services for Lagos businesses. I analyze your current website's strengths and weaknesses, then create an improved design that enhances user experience, performance, and conversion rates. The redesign process preserves your valuable content and SEO equity while modernizing the look and functionality."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you work with businesses outside of Lagos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While I specialize in serving Lagos businesses, I do work with clients throughout Nigeria and internationally. My process is designed to work effectively via phone, email, and video conferencing, allowing me to deliver the same high-quality results regardless of location."
+        }
+      }]
+    }
+    </script>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background-color: #DB9766;
+        }
+        
+        h3 {
+            font-size: 1.75rem;
+            color: #BE621F;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        a {
+            color: #BE621F;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: #DB9766;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .logo span {
+            color: #DB9766;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            font-weight: 600;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-color: #000;
+            color: #fff;
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #DB9766;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #BE621F;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .section-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-intro h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #DB9766;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .service-icon i {
+            font-size: 2rem;
+            color: #fff;
+        }
+        
+        /* Process Section */
+        .process {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #DB9766;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Why Section */
+        .why-section {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .why-card {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        /* Expertise Section */
+        .expertise {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .expertise-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .expertise-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .expertise-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            color: #fff;
+        }
+        
+        .cta h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            padding: 80px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-col h3 {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+        }
+        
+        .footer-links a:hover {
+            color: #DB9766;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: #DB9766;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #aaa;
+        }
+        
+        /* FAQ Styles */
+        .faq-item {
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .expertise-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: #fff;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s ease;
+                padding: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 20px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Treasure<span>.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#why">Why Choose Me</a></li>
+                    <li><a href="#contact" class="btn">Get Started</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>WordPress Web Design & SEO in Lagos, Nigeria</h1>
+                <p>Transform your online presence with custom WordPress websites designed to attract customers and grow your business. Serving businesses throughout Lagos and beyond.</p>
+                <a href="#contact" class="btn">Explore My Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Explore My Lagos WordPress Services</h2>
+                <p>Comprehensive web design and digital marketing solutions to help your business thrive online.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress <a href="https://100webs.com.ng/web-design/">Website Design in Lagos Nigeria </a></h3>
+                    <p>Beautifully crafted, responsive websites that capture your brand's essence and engage your visitors. As a <a href="https://100webs.com.ng/web-design/best-web-designer-in-lagos/">best web designer in Lagos</a>, I create custom WordPress designs that stand out from the competition.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>WordPress Development in Lagos</h3>
+                    <p>Custom WordPress development that extends beyond templates, giving you a website tailored specifically to your business goals and requirements. I specialize in creating dynamic, feature-rich websites that deliver exceptional user experiences for Lagos businesses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>WordPress Managed Hosting</h3>
+                    <p>Reliable, secure, and optimized WordPress hosting services to ensure your website runs smoothly and efficiently. With managed hosting in Lagos, you can focus on your business while I handle the technical details.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>WordPress Maintenance in Lagos</h3>
+                    <p>Regular updates, backups, and ongoing maintenance to keep your WordPress website secure, fast, and functioning at its best. Prevent problems before they happen with proactive maintenance solutions for Lagos businesses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Website Redesign Services in Lagos</h3>
+                    <p>Transform your outdated website into a modern, effective marketing tool. My website redesign services help Lagos businesses refresh their online presence while improving functionality, user experience, and conversion rates.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h3>WordPress Support in Lagos</h3>
+                    <p>Dedicated support for all your WordPress needs, including troubleshooting, performance optimization, and content updates. I'm always available to help Lagos businesses resolve issues and enhance website functionality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search Engine Optimization in Lagos</h3>
+                    <p>Strategic SEO services to improve your website's visibility and drive targeted traffic. As an <a href="https://100webs.com.ng/search-engine-optimization/seo-specialist-in-lagos/">SEO specialist in Lagos</a>, I help businesses achieve higher rankings and increased organic traffic.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Local SEO Services in Lagos</h3>
+                    <p>Specialized <a href="https://100webs.com.ng/search-engine-optimization/local-seo-specialist-in-lagos/">local SEO services in Lagos</a> to help your business dominate local search results. Improve your Google My Business profile, local citations, and geo-targeted content to attract more customers from your area.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Solutions in Lagos</h3>
+                    <p>Custom e-commerce websites built on WordPress and WooCommerce to help you sell products and services online. I provide <a href="https://100webs.com.ng/web-design/e-commerce-website-designer-in-lagos/">e-commerce website design in Lagos</a> that prioritizes user experience and conversion optimization.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Google Ads Management in Lagos</h3>
+                    <p>Strategic Google Ads campaigns that drive qualified traffic and maximize your ROI. I create and manage targeted advertising campaigns that help Lagos businesses reach potential customers at the right moment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Dedicated Project Management Process</h2>
+                <p>A structured approach to ensure your WordPress project is completed efficiently, on time, and exceeds your expectations.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Kickoff & Creative Brief</h3>
+                    <p>We begin with a comprehensive discussion to understand your business goals, target audience, and project requirements. This foundational step ensures we're aligned on vision and expectations before design begins.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Website Mock-ups & Design</h3>
+                    <p>Creating detailed wireframes and visual designs that bring your vision to life. You'll have the opportunity to review and provide feedback before we move to development.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Website Development</h3>
+                    <p>Transforming approved designs into a fully functional WordPress website with custom features and functionality tailored to your specific business needs.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Revisions & Launch</h3>
+                    <p>Fine-tuning the website based on your feedback and performing thorough testing across devices and browsers before launching your new site to the world.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Hosting, Security & Support</h3>
+                    <p>Providing ongoing hosting, security updates, and technical support to ensure your website continues to perform optimally and remains secure.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Lead Generation & Growth</h3>
+                    <p>Implementing strategic SEO and marketing initiatives to drive traffic, generate leads, and increase brand awareness for sustained business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="why-section">
+        <div class="container">
+            <div class="section-intro">
+                <h2>The Importance of WordPress Expertise</h2>
+                <p>Why working with a dedicated WordPress professional in Lagos makes a difference for your business.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Why a Quality WordPress Website is Important</h3>
+                    <p>In today's digital landscape, your website is often the first interaction potential customers have with your business. A professionally designed WordPress website not only creates a positive first impression but also serves as a powerful marketing tool that works for your business 24/7.</p>
+                    <p>A quality WordPress website helps establish credibility, effectively communicates your value proposition, and provides a seamless user experience that converts visitors into customers. With <a href="https://100webs.com.ng/web-design-services/">professional web design services</a>, you ensure your online presence accurately reflects your brand's quality and professionalism.</p>
+                </div>
+                <div class="why-card">
+                    <h3>What Makes an Effective WordPress Website?</h3>
+                    <p>An effective WordPress website seamlessly combines aesthetic appeal with functional design. It should be visually engaging, intuitive to navigate, mobile-responsive, and optimized for search engines. Beyond these fundamentals, truly effective websites are strategically designed with your specific business goals and target audience in mind.</p>
+                    <p>Key elements include clear calls-to-action, optimized loading speeds, accessible content, and integrated marketing tools that help drive conversions. Most importantly, an effective website evolves with your business, allowing for scalability and ongoing optimization.</p>
+                </div>
+                <div class="why-card">
+                    <h3>WordPress Company & Development Agency</h3>
+                    <p>Working with a dedicated WordPress professional gives you access to specialized expertise and experience that general web designers may lack. As a WordPress-focused developer in Lagos, I understand the platform's capabilities and limitations, allowing me to create solutions that maximize its potential for your specific business needs.</p>
+                    <p>My services go beyond just design to include strategic consulting on how to leverage WordPress for your business growth. With <a href="https://100webs.com.ng/search-engine-optimization/">comprehensive SEO services</a> integrated into every project, I ensure your website not only looks great but performs effectively in search results.</p>
+                </div>
+                <div class="why-card">
+                    <h3>WordPress Developers Serving Lagos</h3>
+                    <p>As a local WordPress developer in Lagos, I offer the advantage of understanding the specific needs and challenges of businesses in our market. This local insight, combined with global best practices, results in websites that effectively connect with your target audience and drive business growth.</p>
+                    <p>My proximity allows for more personalized service, including face-to-face meetings when needed, and a deeper understanding of the competitive landscape. I'm dedicated to providing Lagos businesses with world-class <a href="https://100webs.com.ng/search-engine-optimization/local-seo-specialist-in-lagos/">local SEO services</a> tailored to our unique market conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Innovative Web Design in Lagos</h2>
+                <p>Bringing cutting-edge web design and development services to businesses throughout Lagos.</p>
+            </div>
+            <div class="expertise-content">
+                <div class="expertise-text">
+                    <h3>Comprehensive Web Design Services</h3>
+                    <p>I offer end-to-end web design solutions that cover every aspect of creating an effective online presence. From initial concept development to final implementation, my comprehensive approach ensures consistency and quality throughout the project.</p>
+                    <p>My web design services include custom visual design, responsive implementation, content strategy, user experience optimization, and integrated marketing elements. Every website is built with both aesthetics and functionality in mind, creating an optimal balance between visual appeal and business performance.</p>
+                    
+                    <h3>Expert WordPress Development</h3>
+                    <p>WordPress powers over 40% of all websites worldwide, and for good reason. As a platform, it offers unparalleled flexibility, scalability, and user-friendliness. My expertise in WordPress development allows me to harness these advantages while creating custom solutions tailored to your specific business needs.</p>
+                    <p>From custom theme development to plugin integration and performance optimization, I leverage the full potential of WordPress to create websites that are both beautiful and functional. My development process emphasizes clean code, security best practices, and future-proof implementation.</p>
+                </div>
+                <div class="expertise-text">
+                    <h3>Boost Your Visibility with Lagos-Focused SEO</h3>
+                    <p>Search engine optimization is essential for ensuring your website gets found by potential customers. My <a href="https://100webs.com.ng/search-engine-optimization/">search engine optimization services</a> are specifically tailored to the Lagos market, helping you rank higher for locally relevant searches.</p>
+                    <p>My SEO approach combines technical optimization, content strategy, and local search tactics to improve your visibility in search results. I focus on sustainable, white-hat techniques that build long-term search visibility rather than quick fixes that might compromise your site's reputation.</p>
+                    
+                    <h3>Why Choose Me for Your Lagos Web Design Needs?</h3>
+                    <p>When you work with me, you're partnering with a dedicated professional who is invested in your success. I take the time to understand your business, your goals, and your target audience before recommending solutions that will help you achieve measurable results.</p>
+                    <p>My commitment to ongoing education and staying current with industry trends ensures that your website will leverage the latest best practices in design, development, and digital marketing. With personalized service and a results-driven approach, I help Lagos businesses establish effective online presences that drive growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Ready to Start Your WordPress Project in Lagos?</h2>
+            <p>Let's discuss how I can help your Lagos business establish a powerful online presence with a custom WordPress website.</p>
+            <a href="mailto:contact@treasure.com" class="btn">Get in Touch Today</a>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="why-section">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about WordPress web design and SEO services in Lagos, Nigeria.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card faq-item">
+                    <h3>How much does a WordPress website cost in Lagos?</h3>
+                    <p>WordPress website costs in Lagos vary depending on your specific requirements. Basic WordPress websites typically start around ₦150,000, while more complex e-commerce or custom functionality websites range from ₦300,000 to ₦1,000,000 or more. I provide detailed quotes after understanding your business needs and project scope.</p>
+                </div>
+                <div class="why-card faq-item">
+                    <h3>How long does it take to build a WordPress website?</h3>
+                    <p>The timeline for a WordPress website project in Lagos typically ranges from 2-8 weeks, depending on complexity. Simple informational websites can be completed in 2-3 weeks, while e-commerce or custom functionality sites may take 4-8 weeks. I provide specific timelines during our initial consultation based on your project requirements.</p>
+                </div>
+                <div class="why-card faq-item">
+                    <h3>Do you provide WordPress maintenance services in Lagos?</h3>
+                    <p>Yes, I offer comprehensive WordPress maintenance services for Lagos businesses. These include regular updates, security monitoring, backups, performance optimization, and technical support. Maintenance plans are customized based on your website's needs and can be arranged on monthly or quarterly schedules.</p>
+                </div>
+                <div class="why-card faq-item">
+                    <h3>What makes your SEO services different from other Lagos agencies?</h3>
+                    <p>My SEO services are different because I focus on sustainable, results-oriented strategies specifically tailored for the Lagos market. I combine technical SEO, content optimization, and local search tactics to improve your rankings. Unlike some agencies, I provide transparent reporting, education on SEO practices, and integrate SEO principles directly into your website design from the beginning.</p>
+                </div>
+                <div class="why-card faq-item">
+                    <h3>Can you redesign my existing website?</h3>
+                    <p>Absolutely! Website redesign is one of my core services for Lagos businesses. I analyze your current website's strengths and weaknesses, then create an improved design that enhances user experience, performance, and conversion rates. The redesign process preserves your valuable content and SEO equity while modernizing the look and functionality.</p>
+                </div>
+                <div class="why-card faq-item">
+                    <h3>Do you work with businesses outside of Lagos?</h3>
+                    <p>While I specialize in serving Lagos businesses, I do work with clients throughout Nigeria and internationally. My process is designed to work effectively via phone, email, and video conferencing, allowing me to deliver the same high-quality results regardless of location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Treasure</h3>
+                    <p>Professional WordPress web design and SEO services in Lagos, Nigeria. Helping businesses establish effective online presences that drive growth and success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">WordPress Website Design in Lagos</a></li>
+                        <li><a href="#">WordPress Development in Lagos</a></li>
+                        <li><a href="#">WordPress Hosting in Lagos</a></li>
+                        <li><a href="#">WordPress Maintenance in Lagos</a></li>
+                        <li><a href="#">Website Redesign in Lagos</a></li>
+                        <li><a href="#">Local SEO in Lagos</a></li>
+                        <li><a href="#">Search Engine Optimization in Lagos</a></li>
+                        <li><a href="#">Google Ads Management in Lagos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#why">Why Choose Me</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Nigeria</li>
+                        <li><i class="fas fa-phone"></i> +234 803 874 7832</li>
+                        <li><i class="fas fa-envelope"></i> admin@100webs.com.ng</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Treasure. All Rights Reserved. | WordPress Web Design & SEO Services in Lagos, Nigeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation Toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector('.nav-links').classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        
+        // Reveal Animation
+        window.addEventListener('scroll', reveal);
+        
+        function reveal() {
+            const reveals = document.querySelectorAll('.service-card, .process-step, .why-card');
+            
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveals[i].getBoundingClientRect().top;
+                const revealPoint = 150;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
